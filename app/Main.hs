@@ -1,10 +1,10 @@
 module Main where
 
-import Euler7
+import Euler8
 
 main :: IO ()
 
 
 main = do
-  print(findKthPrime 10001)
+  print ans
 
