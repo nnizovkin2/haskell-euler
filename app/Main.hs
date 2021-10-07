@@ -1,6 +1,6 @@
 module Main where
 
-import Euler9
+import Euler11
 
 main :: IO ()
 
