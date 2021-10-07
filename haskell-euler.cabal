@@ -32,6 +32,7 @@ library
       Euler6
       Euler7
       Euler8
+      Euler9
       Lib
   other-modules:
       Paths_haskell_euler
