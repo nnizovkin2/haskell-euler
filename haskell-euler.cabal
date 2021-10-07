@@ -25,6 +25,12 @@ source-repository head
 
 library
   exposed-modules:
+      Euler2
+      Euler3
+      Euler4
+      Euler5
+      Euler6
+      Euler7
       Lib
   other-modules:
       Paths_haskell_euler

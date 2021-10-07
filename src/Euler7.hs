@@ -1,8 +1,6 @@
 module Euler7(findKthPrime) where
 import Euler3 
 
---https://www.mccme.ru/free-books/dubna/balazard.pdf
-
 findKthPrime :: Integer -> Integer
 findKthPrime k =
   last(findKthPrimeR k [2])
