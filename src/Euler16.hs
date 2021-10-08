@@ -5,6 +5,8 @@ import Data.Char(digitToInt)
 --
 --What is the sum of the digits of the number 21000?  
 
-ans::Int
+dSum::Integer->Int
+dSum d = sum(map digitToInt (show d)) 
 
-ans = sum(map digitToInt (show(2^1000))) 
+ans :: Int
+ans=dSum (2^1000)
