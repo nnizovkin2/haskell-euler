@@ -1,10 +1,10 @@
 module Main where
 
-import Euler14(maxLengthEl)
+import Euler15(ans)
 
 main :: IO ()
 
 readInt:: String->Integer
 readInt s = read s::Integer 
 main = do
-  print(maxLengthEl 1000000)  
+  print ans  
