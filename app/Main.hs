@@ -1,8 +1,8 @@
 module Main where
 
-import Euler20(s)
+import Euler21(ans, getSumDivisors)
 
 main :: IO ()
 
 main = do
-  print s
+  print ans
