@@ -1,8 +1,11 @@
 module Main where
 
-import Euler12
+import Euler13
 
 main :: IO ()
 
+readInt:: String->Integer
+readInt s = read s::Integer 
 main = do
-  print (getListOfPrimes 1)
+  content <- readFile "data.txt"
+  print(sumOfInts(lines content))  
