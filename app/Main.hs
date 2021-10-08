@@ -1,11 +1,10 @@
 module Main where
 
-import Euler13
+import Euler14(maxLengthEl)
 
 main :: IO ()
 
 readInt:: String->Integer
 readInt s = read s::Integer 
 main = do
-  content <- readFile "data.txt"
-  print(sumOfInts(lines content))  
+  print(maxLengthEl 1000000)  
