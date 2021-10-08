@@ -1,4 +1,4 @@
-module Euler7(findKthPrime) where
+module Euler7 where
 import Euler3
 
 findKthPrime :: Integer -> Integer

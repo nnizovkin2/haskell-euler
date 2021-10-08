@@ -1,4 +1,4 @@
-module Euler4(findMaxPalindrome) where
+module Euler4 where
 
 import Data.Void (Void)
 

@@ -1,4 +1,4 @@
-module Euler12(getListOfPrimes) where
+module Euler12 where
   
 import Euler3
 import Data.Map (fromListWith, toList)

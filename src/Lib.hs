@@ -1,6 +1,4 @@
-module Lib
-    (countMult,
-    ) where
+module Lib where
 
 countMult :: Integer -> Integer
 countMult x = countMultReq(x - 1)

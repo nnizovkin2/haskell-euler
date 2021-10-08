@@ -1,4 +1,4 @@
-module Euler13(sumOfInts) where
+module Euler13 where
 
 readInt:: String->Integer
 readInt s = read s::Integer 
