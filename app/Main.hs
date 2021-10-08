@@ -1,10 +1,8 @@
 module Main where
 
-import Euler11
+import Euler12
 
 main :: IO ()
 
-
 main = do
-  print ans
-
+  print (getListOfPrimes 1)
