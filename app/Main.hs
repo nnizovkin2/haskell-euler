@@ -1,11 +1,10 @@
 module Main where
 
-import Euler17(lettersSize)
-import Data.Char(isSpace)
+import Euler18(ans)
 
 main :: IO ()
 
 readInt:: String->Integer
 readInt s = read s::Integer
 main = do
-  print lettersSize
+  print ans
