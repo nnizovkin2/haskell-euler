@@ -13,9 +13,9 @@ ans :: Integer
 ans = sum(filter isAmicable [1..10000])
 
 isAmicable:: Integer->Bool
-isAmicable n = n == getDivisorsSum(getDivisorsSum n) && n /= getDivisorsSum n
+isAmicable n = n == sumOfDivisors(sumOfDivisors n) && n /= sumOfDivisors n
 
-getDivisorsSum:: Integer->Integer
-getDivisorsSum n = sum(filter (\d -> n `mod` d == 0) [1..(n`div`2)]) 
+sumOfDivisors:: Integer->Integer
+sumOfDivisors n = sum(filter (\d -> n `mod` d == 0) [1..(n`div`2)]) 
 
 
