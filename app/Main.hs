@@ -1,9 +1,10 @@
 module Main where
 
 import Euler2(fibSeq)
-import Euler25(fibIndex)
+import Euler26
+import Data.BigDecimal
 
 main :: IO ()
 
 main = do
-   print(fibIndex (10^999))
+   print(maxPeriodFraction)

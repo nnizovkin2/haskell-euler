@@ -42,6 +42,7 @@ library
       Euler23
       Euler24
       Euler25
+      Euler26
       Euler3
       Euler4
       Euler5
@@ -55,9 +56,12 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      HasBigDecimal
+    , base >=4.7 && <5
     , containers
     , split
+    , text
+    , text-conversions
     , time
   default-language: Haskell2010
 
@@ -69,10 +73,13 @@ executable haskell-euler-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      HasBigDecimal
+    , base >=4.7 && <5
     , containers
     , haskell-euler
     , split
+    , text
+    , text-conversions
     , time
   default-language: Haskell2010
 
@@ -85,9 +92,12 @@ test-suite haskell-euler-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      HasBigDecimal
+    , base >=4.7 && <5
     , containers
     , haskell-euler
     , split
+    , text
+    , text-conversions
     , time
   default-language: Haskell2010

@@ -24,7 +24,9 @@ dependencies:
 - containers
 - time
 - split
-
+- text
+- HasBigDecimal
+- text-conversions
 library:
   source-dirs: src
 
