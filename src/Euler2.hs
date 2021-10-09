@@ -8,15 +8,16 @@ module Euler2 where
 --By considering the terms in the Fibonacci sequence whose values do not exceed four million,
 --find the sum of the even-valued terms.  
 
-evenFibSum :: (Integer, Integer, Integer) -> Integer
-evenFibSum (first, second, limiter) =
-  if first + second > limiter then 0
-  else evenChecker(first + second) + evenFibSum(second, first + second, limiter)
+evenFibSum:: Integer -> Integer
+evenFibSum lim = sum(filter even (fibSeq lim))
 
-evenChecker :: Integer -> Integer 
-evenChecker x = 
-  if even x then x
-  else 0
+fibSeq:: Integer -> [Integer]
+fibSeq = fibSeqR 1 1   
+fibSeqR:: Integer -> Integer -> Integer -> [Integer]
+fibSeqR first second limiter =
+        if first > limiter then []
+        else first:fibSeqR second (first + second) limiter
+
 
   
   

@@ -1,8 +1,9 @@
 module Main where
 
-import Euler24(toFactorialNotation, fromList)
+import Euler2(fibSeq)
+import Euler25(fibIndex)
 
 main :: IO ()
 
 main = do
-   print (fromList(toFactorialNotation 999999))
+   print(fibIndex (10^999))
