@@ -1,6 +1,6 @@
 module Main where
 
-import Euler21(ans, getSumDivisors)
+import Euler21(ans)
 
 main :: IO ()
 
