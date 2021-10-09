@@ -9,13 +9,13 @@ module Euler21 where
 --Evaluate the sum of all the amicable numbers under 10000    
 
 
-ans :: Integer
+ans :: Int
 ans = sum(filter isAmicable [1..10000])
 
-isAmicable:: Integer->Bool
+isAmicable:: Int->Bool
 isAmicable n = n == sumOfDivisors(sumOfDivisors n) && n /= sumOfDivisors n
 
-sumOfDivisors:: Integer->Integer
+sumOfDivisors:: Int->Int
 sumOfDivisors n = sum(filter (\d -> n `mod` d == 0) [1..(n`div`2)]) 
 
 

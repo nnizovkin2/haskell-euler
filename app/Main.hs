@@ -1,8 +1,8 @@
 module Main where
 
-import Euler22(totalScore)
+import Euler23(s)
 
 main :: IO ()
 
-main = do s <- readFile "p022_names.txt" 
-          print(totalScore s)
+main = do
+   print s
