@@ -54,6 +54,7 @@ library
   build-depends:
       base >=4.7 && <5
     , containers
+    , split
     , time
   default-language: Haskell2010
 
@@ -68,6 +69,7 @@ executable haskell-euler-exe
       base >=4.7 && <5
     , containers
     , haskell-euler
+    , split
     , time
   default-language: Haskell2010
 
@@ -83,5 +85,6 @@ test-suite haskell-euler-test
       base >=4.7 && <5
     , containers
     , haskell-euler
+    , split
     , time
   default-language: Haskell2010
