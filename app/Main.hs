@@ -1,8 +1,8 @@
 module Main where
 
-import Euler23(s)
+import Euler24(toFactorialNotation, fromList)
 
 main :: IO ()
 
 main = do
-   print s
+   print (fromList(toFactorialNotation 999999))

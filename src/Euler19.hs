@@ -9,7 +9,9 @@ sundaysSum :: Integer
 sundaysSum = snd(sundaysR(fromGregorian 1901 1 1, 0))
 
 third :: (a, b, c) -> c
-third (_,_,a) = a
+third (_,_,c) = c
+forth :: (a, b, c, d) -> d
+forth (_,_,_,d) = d
 sundaysR:: (Day, Integer) -> (Day, Integer)
 sundaysR (d, c)
   | d == fromGregorian 2001 1 1 = (d, c)

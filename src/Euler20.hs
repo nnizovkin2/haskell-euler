@@ -1,5 +1,5 @@
 module Euler20 where
-import Euler16  
+import Euler16
 --n! means n × (n − 1) × ... × 3 × 2 × 1
 --
 --For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
@@ -9,7 +9,7 @@ import Euler16
 
 f:: Integer->Integer
 f 0 = 1
-f 1 = 1  
+f 1 = 1
 f n = n * f (n - 1)
 
 s=dSum (f 100)
