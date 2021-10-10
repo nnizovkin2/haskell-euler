@@ -27,6 +27,7 @@ dependencies:
 - text
 - HasBigDecimal
 - text-conversions
+- control-monad-omega
 library:
   source-dirs: src
 

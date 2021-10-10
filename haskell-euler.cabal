@@ -48,6 +48,7 @@ library
       Euler5
       Euler6
       Euler7
+      Euler78
       Euler8
       Euler9
       Lib
@@ -59,6 +60,7 @@ library
       HasBigDecimal
     , base >=4.7 && <5
     , containers
+    , control-monad-omega
     , split
     , text
     , text-conversions
@@ -76,6 +78,7 @@ executable haskell-euler-exe
       HasBigDecimal
     , base >=4.7 && <5
     , containers
+    , control-monad-omega
     , haskell-euler
     , split
     , text
@@ -95,6 +98,7 @@ test-suite haskell-euler-test
       HasBigDecimal
     , base >=4.7 && <5
     , containers
+    , control-monad-omega
     , haskell-euler
     , split
     , text
