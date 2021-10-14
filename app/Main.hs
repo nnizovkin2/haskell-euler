@@ -1,6 +1,7 @@
 module Main where
 
-import Euler90
+import Euler28
+import Data.List.Split.Internals(chunksOf)  
       
 main :: IO ()
-main = print(ans)
+main = print(res)

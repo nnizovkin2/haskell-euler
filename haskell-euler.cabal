@@ -43,14 +43,18 @@ library
       Euler24
       Euler25
       Euler26
+      Euler27
+      Euler28
       Euler3
       Euler4
       Euler5
       Euler6
       Euler7
       Euler78
+      Euler78M
       Euler8
       Euler9
+      Euler90
       Lib
   other-modules:
       Paths_haskell_euler
@@ -60,7 +64,6 @@ library
       HasBigDecimal
     , base >=4.7 && <5
     , containers
-    , control-monad-omega
     , split
     , text
     , text-conversions
@@ -78,7 +81,6 @@ executable haskell-euler-exe
       HasBigDecimal
     , base >=4.7 && <5
     , containers
-    , control-monad-omega
     , haskell-euler
     , split
     , text
@@ -98,7 +100,6 @@ test-suite haskell-euler-test
       HasBigDecimal
     , base >=4.7 && <5
     , containers
-    , control-monad-omega
     , haskell-euler
     , split
     , text
