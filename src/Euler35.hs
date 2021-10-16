@@ -1,4 +1,4 @@
-module Euler35(a,primes,allRotations) where
+module Euler35(a,primes,allRotations,dn) where
 
 import Euler10
 import Data.IntSet (fromList,member)
