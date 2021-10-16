@@ -1,6 +1,6 @@
 module Main where
 
-import Euler29
+import Euler35(a, allRotations)
       
 main :: IO ()
-main = print(ans)
+main = print(a)

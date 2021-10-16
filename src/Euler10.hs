@@ -7,11 +7,11 @@ import Euler3
 --Find the sum of all the primes below two million.  
 --142913828922
 ans:: Integer
-ans = sum(findPrimes 2000000) 
+ans = foldl(\s c->s+toInteger c) 0 (findPrimes 2000000) 
 
-findPrimes:: Integer -> [Integer]
+findPrimes:: Int -> [Int]
 findPrimes = findPrimesC [] 2
-findPrimesC:: [Integer] -> Integer -> Integer -> [Integer]
+findPrimesC:: [Int] -> Int -> Int -> [Int]
 findPrimesC l cur lim
   | cur == lim = l
   | isPrime l cur = findPrimesC (l ++ [cur]) (cur + 1) lim

@@ -4,22 +4,22 @@ module Euler3 where
 
 --What is the largest prime factor of the number 600851475143 ?
 
-isPrime:: [Integer]->Integer->Bool
+isPrime:: [Int]->Int->Bool
 isPrime [] _ = True
 isPrime (x:xs) pc =
   mod pc x /= 0 && isPrime xs pc
 
-nextPrime:: Integer->[Integer]->Integer
+nextPrime:: Int->[Int]->Int
 nextPrime pc l =
   if isPrime l pc then pc
   else nextPrime (pc + 1) l
 
-maxPrimeNumber:: Integer->Integer
+maxPrimeNumber:: Int->Int
 maxPrimeNumber num =
   maxPrimeNumberR(num, 0, [2])
 
 
-maxPrimeNumberR:: (Integer, Integer, [Integer])->Integer
+maxPrimeNumberR:: (Int, Int, [Int])->Int
 maxPrimeNumberR (number, max, l)
   | number == 1 = max
   | mod number (last l) == 0 = maxPrimeNumberR(number `div` last l, last l, l)
