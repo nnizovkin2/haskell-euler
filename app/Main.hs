@@ -1,6 +1,6 @@
 module Main where
 
-import Euler40
+import Euler41(a)
       
 main :: IO ()
-main = print(ans)
+main = print(a)
