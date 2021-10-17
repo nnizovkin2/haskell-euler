@@ -1,4 +1,4 @@
-module Euler41(a) where
+module Euler41(a,permutations) where
 
 import Euler39
 --import Euler78M
