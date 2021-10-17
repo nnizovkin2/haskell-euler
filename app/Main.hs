@@ -1,6 +1,8 @@
 module Main where
 
-import Euler41(a)
+import Euler42
       
-main :: IO ()
-main = print(a)
+main:: IO()
+main = do s <- readFile "p042_words.txt"
+          print(twn s)
+

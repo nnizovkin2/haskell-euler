@@ -17,11 +17,14 @@ import Data.List
 --splitOn "," "my,comma,separated,list"
 --["my","comma","separated","list"]  
 
+run:: IO()
+run = do s<-readFile "p022_names.txt"
+         print(totalScore s) 
 totalScore:: String->Integer
-totalScore s = sum(zipWith score [1..length(names s)] (names s))
+totalScore s = sum(zipWith score [1..length(Euler22.words s)] ((sort.Euler22.words) s))
 
-names:: String->[String]
-names s = sort (splitOn "," (filter (/='"') s))
+words:: String->[String]
+words s = sort (splitOn "," (filter (/='"') s))
 
 score:: Int->String->Integer
 score i s = toInteger(i * sum (map (\ch -> 1 + fromEnum ch - fromEnum 'A') s))
