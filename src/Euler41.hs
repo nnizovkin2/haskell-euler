@@ -12,4 +12,4 @@ permutations [] = [[]]
 permutations l = concatMap (\el->map(el:)(permutations(delete el l))) l
 
 isPrime:: Integer->Bool
-isPrime n = not (any (\el->n`mod`el==0) [2..(floor(sqrt(fromInteger n)::Float))]!!1)
+isPrime n = not (any (\el->n`mod`el==0) [2..(floor(sqrt(fromInteger n)::Float))])
