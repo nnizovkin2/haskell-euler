@@ -1,6 +1,6 @@
 module Main where
 
-import Euler45(ans)
+import Euler47(ans)
       
 main:: IO()
 main = print ans
