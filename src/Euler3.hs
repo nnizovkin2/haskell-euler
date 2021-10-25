@@ -7,7 +7,7 @@ module Euler3 where
 isPrime:: [Int]->Int->Bool
 isPrime [] _ = True
 isPrime (x:xs) pc =
-  mod pc x /= 0 && isPrime xs pc
+  x*x > pc || (mod pc x /= 0 && isPrime xs pc)
 
 nextPrime:: Int->[Int]->Int
 nextPrime pc l =

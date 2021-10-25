@@ -1,11 +1,10 @@
 module Main where
 
-import Euler54(res)
+import Euler58(ratio)
       
 main:: IO()
 main = do 
-         content <- readFile "p054_poker.txt"
-         print (res content)
+         print ratio
 
 -- content <- readFile (args !! 0)
 -- linesOfFiles <- lines content
