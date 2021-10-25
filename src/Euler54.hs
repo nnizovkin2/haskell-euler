@@ -4,14 +4,11 @@ import Data.List (sort, nub)
 import Data.Map (fromListWith, toList)
 import Data.Char (isDigit, digitToInt)
 import Data.List.Split (splitOn)
-import Data.Bifunctor(bimap)
 
 res::String->Int
 res s = length(filter(\(f, sd) -> prepareHand f > prepareHand sd)(map hands (lines s)))
 hands:: String->([String], [String])
 hands s = splitAt 5 (splitOn " " s)
-
---                 else -1)(Data.Bifunctor.bimap prepareHand prepareHand (fh,sh))
 
 prepareHand :: [String] -> (Int, [(Int, Int)])
 prepareHand = combination.splitVS
