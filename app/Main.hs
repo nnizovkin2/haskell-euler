@@ -1,10 +1,10 @@
 module Main where
 
-import Euler58(ratio)
+import Euler60(ans)
       
 main:: IO()
 main = do 
-         print ratio
+         print ans
 
 -- content <- readFile (args !! 0)
 -- linesOfFiles <- lines content
