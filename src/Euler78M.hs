@@ -1,11 +1,12 @@
 module Euler78M where
 
+import Euler58  
 import Data.Foldable (foldlM)
 
 ans = length (partitions (\n -> n `mod` 1000000 == 0)) - 1
 
 partitions::(Integer -> Bool) -> [Integer]
-partitions stopCriteria = either id id (foldlM(\p _-> stopEither stopCriteria (nextPartition p)) [1] [1 ..])
+partitions stopCriteria = eIdId (foldlM(\p _-> stopEither stopCriteria (nextPartition p)) [1] [1 ..])
 
 stopEither::(a -> Bool) -> [a] -> Either [a] [a]
 stopEither c l =
